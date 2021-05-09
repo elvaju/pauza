@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>kontakt</title>
+</head>
+<body>
+
+
+<div class="container-fluid">
+<div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" >
+{% load static %}<img src="{% static 'pauzaapp/images/pauza.jpg' %}" alt="My image">
+<button type="button" class="btn btn-outline-danger"><a href="{% url 'home' %}">HOME</a></button>
+<button type="button" class="btn btn-outline-danger"><a href="{% url 'meni' %}">MENI</a></button>
+<button type="button" class="btn btn-outline-danger"><a href="{% url 'onama' %}">O NAMA</a></button>
+<button type="button" class="btn btn-outline-danger"><a href="{% url 'kontakt' %}">KONTAKT</a></button>
+<form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Kontakt</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Za sve informacije obratite nam se putem broja telefona, mail-a ili na našoj adresi.<br> VAŠA PAUZA
+    </p>
+
+   
+
+        <!--Grid column-->
+        <div class="text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Sarajevo, Čekaluša 64, Bosna i Hercegovina</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>060333333</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>pauza@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    
+
+</section>
+<!--Section: Contact v.2-->
+
+
+
+
+
+
+<style>
+.mb-4 {
+	color:red;
+	font-weight: bold;
+
+}	
+body{
+	background-color: black;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
